@@ -36,8 +36,10 @@ public class ArrayDemo {
         int d = 6;
 
         int[] newArray = new int[n + 1];
+
         for (int i = 0; i < n; i++)
             newArray[i] = arrayDouble[i];
+
 
         newArray[n] = d;
         return newArray;
