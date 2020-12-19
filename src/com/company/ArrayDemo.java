@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class ArrayDemo {
 
 
@@ -45,16 +47,25 @@ public class ArrayDemo {
         return newArray;
     }
 
-    public static void reverse( int [] array) {
-          array = new int[]{2, 4, 5, 7, 8, 9, 70};
+    public static void reverse(int[] array) {
+        array = new int[]{2, 4, 5, 7, 8, 9, 70,90};
 
 
-        for (int i = array.length - 1; i >= 0; i--)
-            System.out.print(array[i] + "  ");
+        for (int i = 0; i < array.length / 2; i++) {
+            int temp = array[i];
+            array[i] = array[array.length - i - 1];
+            array[array.length - i - 1] = (int) temp;
+        }
+
+            for (int j=0;j<array.length;j++){
+
+        }
+        System.out.println(Arrays.toString(array));
     }
-
-
 }
+
+
+
 
 
 
